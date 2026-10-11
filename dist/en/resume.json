@@ -15,7 +15,8 @@
         "username": "petr-hýl-432324b7",
         "url": "https://www.linkedin.com/in/petr-h%C3%BDl-432324b7/"
       }
-    ]
+    ],
+    "url": "https://pehyl.github.io/cv/en/"
   },
   "skills": [
     {
@@ -285,7 +286,7 @@
       "A knowledge base for agents (Obsidian “LLM wiki”) that agents read and update after every task.",
       "MCP integrations – Figma, browser, file system."
     ],
-    "canonical": ""
+    "canonical": "https://pehyl.github.io/cv/en/"
   },
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json"
 }

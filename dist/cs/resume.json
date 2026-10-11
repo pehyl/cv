@@ -15,7 +15,8 @@
         "username": "petr-hýl-432324b7",
         "url": "https://www.linkedin.com/in/petr-h%C3%BDl-432324b7/"
       }
-    ]
+    ],
+    "url": "https://pehyl.github.io/cv/cs/"
   },
   "skills": [
     {
@@ -285,7 +286,7 @@
       "Znalostní báze pro agenty (Obsidian, „LLM wiki“), kterou agenti čtou a po každé práci doplňují.",
       "MCP integrace – Figma, prohlížeč, soubory."
     ],
-    "canonical": ""
+    "canonical": "https://pehyl.github.io/cv/cs/"
   },
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json"
 }

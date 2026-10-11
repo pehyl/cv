@@ -27,6 +27,6 @@ Copy a data file (e.g. `data/cv.en.json`), adjust `basics.label`, `basics.summar
 
 ## Publish
 
-Set `"url"` in `site.json` to the Pages address (e.g. `https://<user>.github.io/cv/`), rebuild,
+Set `"url"` in `site.json` to the Pages address (e.g. `https://pehyl.github.io/cv/`), rebuild,
 commit and push to `main`. The workflow in `.github/workflows/pages.yml` deploys `dist/`.
 In the repository settings, set **Pages → Source** to **GitHub Actions**.
