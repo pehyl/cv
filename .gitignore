@@ -1,0 +1,4 @@
+# full contact details (street address, phone) — never publish
+private/
+node_modules/
+__pycache__/

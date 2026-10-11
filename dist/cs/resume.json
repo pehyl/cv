@@ -1,0 +1,291 @@
+{
+  "basics": {
+    "name": "Petr Hýl",
+    "label": "Frontend developer s AI workflow",
+    "email": "hylpetr@centrum.cz",
+    "summary": "Frontend developer, který od roku 2022 na volné noze kóduje a nasazuje weby, e-shopy a PWA aplikace pro webovou agenturu IMPnet – zatím přibližně 150 projektů. Vyvíjím s AI agenty v Claude Code: píšu vlastní skills, stavím multi-agentní workflow a udržuji znalostní bázi, ze které agenti čerpají. Z předchozí praxe v PR a zákaznické podpoře umím komunikovat s klienty česky, anglicky i francouzsky.",
+    "location": {
+      "city": "Olomouc",
+      "countryCode": "CZ",
+      "region": "Olomoucký kraj"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "petr-hýl-432324b7",
+        "url": "https://www.linkedin.com/in/petr-h%C3%BDl-432324b7/"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "AI workflow",
+      "keywords": [
+        "Claude Code",
+        "vlastní skills (SKILL.md)",
+        "subagenti a multi-agentní workflow",
+        "MCP (Figma, prohlížeč)",
+        "prompting a kontext pro agenty"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "Less",
+        "JavaScript",
+        "UIkit",
+        "Chart.js",
+        "PWA (service worker, manifest)",
+        "responzivní design"
+      ]
+    },
+    {
+      "name": "Šablony a nasazení",
+      "keywords": [
+        "Nette / Latte",
+        "e-mailové šablony",
+        "PDF šablony",
+        "Git",
+        "GitLab (issues, merge requesty, deploy)",
+        "DNS, SSL, FTP",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Výkon a kvalita",
+      "keywords": [
+        "PageSpeed / Lighthouse",
+        "optimalizace obrázků a assetů",
+        "SEO základy",
+        "lokalizace webů (CZ, SK, EN, FR, PL)"
+      ]
+    },
+    {
+      "name": "Design a nástroje",
+      "keywords": [
+        "Figma",
+        "Adobe XD",
+        "Photoshop",
+        "Inkscape",
+        "VS Code",
+        "Laragon",
+        "NPM"
+      ]
+    },
+    {
+      "name": "Také",
+      "keywords": [
+        "Vue.js"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "IMPnet, s.r.o. (webová agentura)",
+      "position": "Frontend developer, OSVČ",
+      "startDate": "2022-07",
+      "summary": "Kódování grafiky do šablon, nasazování webů a e-shopů, údržba a rozvoj klientských projektů.",
+      "highlights": [
+        "Přibližně 150 webů, e-shopů a realitních portálů od návrhu ve Figmě / Adobe XD po spuštění na produkčním serveru.",
+        "PWA aplikace: ručně psaný service worker, manifest a offline režim (app.lindabstrechy.cz, thermo-control.cz, mentem.cz).",
+        "mentem.cz – uživatelský profil herního portálu se statistikami hráčů, grafy v Chart.js a rodinnými licencemi (cca 240 h vývoje).",
+        "Optimalizace výkonu: mobilní PageSpeed skóre webu amrs.cz z 33 na 85.",
+        "Šablony e-mailů a PDF dokumentů (katalogové listy, objednávky, karty nemovitostí).",
+        "Práce v GitLabu – issues, merge requesty, deploy; spouštění webů včetně DNS a SSL."
+      ]
+    },
+    {
+      "name": "DHL Freight CZ, s.r.o.",
+      "position": "Referent zákaznického centra",
+      "startDate": "2020",
+      "endDate": "2023-08"
+    },
+    {
+      "name": "Kiwi.com",
+      "position": "Specialista zákaznické podpory (francouzština)",
+      "startDate": "2019",
+      "endDate": "2019"
+    },
+    {
+      "name": "Festa Olomouc, s.r.o.",
+      "position": "PR manažer, vedoucí realizace projektů",
+      "startDate": "2016",
+      "endDate": "2021"
+    },
+    {
+      "name": "Colours of Ostrava, Svátky písní Olomouc, MusicOlomouc",
+      "position": "Event management",
+      "startDate": "2014"
+    }
+  ],
+  "projects": [
+    {
+      "name": "app.lindabstrechy.cz",
+      "url": "https://app.lindabstrechy.cz",
+      "description": "PWA aplikace výrobce střešních krytin – frontend, service worker, offline režim."
+    },
+    {
+      "name": "app.realitni-samoobsluha.cz",
+      "url": "https://app.realitni-samoobsluha.cz",
+      "description": "PWA ve Vue.js – napojení na REST API, oprava autentizace tokenem, nové funkce podle dokumentace API."
+    },
+    {
+      "name": "mentem.cz",
+      "url": "https://mentem.cz",
+      "description": "Herní portál – uživatelský profil, statistiky a grafy, licence, PWA."
+    },
+    {
+      "name": "thermo-control.cz",
+      "url": "https://thermo-control.cz",
+      "description": "E-shop s konfigurátorem a poptávkovými e-maily, PWA."
+    },
+    {
+      "name": "labona.cz",
+      "url": "https://labona.cz",
+      "description": "E-shop – kódování nového designu."
+    },
+    {
+      "name": "ranch13.sk",
+      "url": "https://ranch13.sk",
+      "description": "Web a ticketovací systém."
+    },
+    {
+      "name": "nextreality-tgh.cz",
+      "url": "https://nextreality-tgh.cz",
+      "description": "Realitní web sítě NEXT REALITY."
+    },
+    {
+      "name": "nextrealitystars.cz",
+      "url": "https://nextrealitystars.cz",
+      "description": "Realitní web sítě NEXT REALITY."
+    },
+    {
+      "name": "royalreality.cz",
+      "url": "https://royalreality.cz",
+      "description": "Realitní web, generování PDF karet nemovitostí."
+    },
+    {
+      "name": "caim.cz",
+      "url": "https://caim.cz",
+      "description": "Redesign webu České asociace interim managementu."
+    },
+    {
+      "name": "sonnybrown.com",
+      "url": "https://sonnybrown.com",
+      "description": "Kódování a nasazení webu."
+    },
+    {
+      "name": "unitinvest.cz",
+      "url": "https://unitinvest.cz",
+      "description": "Kódování a nasazení webu."
+    },
+    {
+      "name": "ester-ledecka.cz",
+      "url": "https://ester-ledecka.cz",
+      "description": "Rozšíření webu."
+    },
+    {
+      "name": "mandlarna.cz",
+      "url": "https://mandlarna.cz",
+      "description": "Úpravy webu."
+    }
+  ],
+  "sideProjects": [
+    {
+      "name": "svatkypisniolomouc.cz",
+      "url": "https://www.svatkypisniolomouc.cz",
+      "description": "Tvorba celého webu (2021), nyní prochází kompletním redesignem."
+    },
+    {
+      "name": "musicolomouc.cz",
+      "url": "https://www.musicolomouc.cz",
+      "description": "Správa webu."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Filozofická fakulta Univerzity Palackého v Olomouci",
+      "area": "Odborná francouzština pro hospodářskou praxi",
+      "studyType": "Navazující magisterské studium",
+      "startDate": "2016",
+      "endDate": "2019"
+    },
+    {
+      "institution": "IAE Clermont-Ferrand",
+      "area": "Master MAE",
+      "studyType": "Zahraniční studium",
+      "startDate": "2017",
+      "endDate": "2018"
+    },
+    {
+      "institution": "Filozofická fakulta Univerzity Palackého v Olomouci",
+      "area": "Francouzština se zaměřením na aplikovanou ekonomii",
+      "studyType": "Bakalářské studium (Bc.), Erasmus na Université Charles-de-Gaulle, Lille 3",
+      "startDate": "2012",
+      "endDate": "2016"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Vue – The Complete Guide (incl. Router & Composition API)",
+      "issuer": "Udemy",
+      "url": "https://ude.my/UC-34d50d3b-ef35-4ccc-97d7-51f226b57c25/"
+    },
+    {
+      "name": "The Complete JavaScript Course 2022: From Zero to Expert!",
+      "issuer": "Udemy",
+      "url": "https://ude.my/UC-1256c589-e2f7-4c11-84b9-40dd0d9cfc14/"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Čeština",
+      "fluency": "rodilý mluvčí"
+    },
+    {
+      "language": "Francouzština",
+      "fluency": "C1 (DALF C1)"
+    },
+    {
+      "language": "Angličtina",
+      "fluency": "C1"
+    },
+    {
+      "language": "Arménština",
+      "fluency": "B1"
+    },
+    {
+      "language": "Italština",
+      "fluency": "A2"
+    },
+    {
+      "language": "Portugalština",
+      "fluency": "A2"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sborový zpěv"
+    },
+    {
+      "name": "Sport – stolní tenis, fotbal, cyklistika, badminton, běh"
+    },
+    {
+      "name": "Literatura, cestování, vaření"
+    }
+  ],
+  "meta": {
+    "language": "cs",
+    "aiWorkflow": [
+      "Claude Code jako hlavní vývojové prostředí – orientace v cizím kódu, implementace, kontrola výsledku a zápis rozhodnutí.",
+      "Vlastní skills: automatický překlad lokalizovaného obsahu v TinyMCE CMS (s testy v jsdom), restyle webu podle návrhu ve Figmě, scroll animace.",
+      "Multi-agentní pipeline Figma → komponenty: orchestrátor a subagenti, Code Connect jako zdroj design tokenů.",
+      "Znalostní báze pro agenty (Obsidian, „LLM wiki“), kterou agenti čtou a po každé práci doplňují.",
+      "MCP integrace – Figma, prohlížeč, soubory."
+    ],
+    "canonical": ""
+  },
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json"
+}

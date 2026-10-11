@@ -1,0 +1,19 @@
+# Petr Hýl
+
+> Frontend Developer with an AI Workflow. Frontend developer who has been building and deploying websites, e-shops and PWAs for the web agency IMPnet as a freelancer since 2022 – around 150 projects so far. I develop with AI agents in Claude Code: I write custom skills, build multi-agent workflows and maintain a knowledge base the agents work from. A background in PR and customer support means I am comfortable working with clients in Czech, English and French.
+
+The same CV is available in English and Czech. The Markdown and JSON Resume files hold the complete content and are the best sources for automated reading.
+
+## English
+
+- [Petr Hýl – Frontend Developer with an AI Workflow – CV (Markdown)](en/cv.md)
+- [JSON Resume](en/resume.json)
+- [HTML](en/)
+- [PDF](en/Petr-Hyl-Frontend-Developer-CV-en.pdf)
+
+## Čeština
+
+- [Petr Hýl – Frontend developer s AI workflow – životopis (Markdown)](cs/cv.md)
+- [JSON Resume](cs/resume.json)
+- [HTML](cs/)
+- [PDF](cs/Petr-Hyl-Frontend-developer-CV-cs.pdf)

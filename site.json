@@ -1,0 +1,6 @@
+{
+  "url": "",
+  "default_lang": "cs",
+  "theme_fonts": ["bricolage-grotesque/400.css", "bricolage-grotesque/600.css", "bricolage-grotesque/800.css",
+                  "source-sans-3/400.css", "source-sans-3/600.css", "source-sans-3/700.css", "source-sans-3/400-italic.css"]
+}

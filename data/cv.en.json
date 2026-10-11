@@ -1,0 +1,311 @@
+{
+  "lang": "en",
+  "basics": {
+    "name": "Petr Hýl",
+    "label": "Frontend Developer with an AI Workflow",
+    "email": "hylpetr@centrum.cz",
+    "phone": "+420 723 410 949",
+    "summary": "Frontend developer who has been building and deploying websites, e-shops and PWAs for the web agency IMPnet as a freelancer since 2022 – around 150 projects so far. I develop with AI agents in Claude Code: I write custom skills, build multi-agent workflows and maintain a knowledge base the agents work from. A background in PR and customer support means I am comfortable working with clients in Czech, English and French.",
+    "location": {
+      "city": "Olomouc",
+      "countryCode": "CZ",
+      "region": "Olomouc Region"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "petr-hýl-432324b7",
+        "url": "https://www.linkedin.com/in/petr-h%C3%BDl-432324b7/"
+      }
+    ]
+  },
+  "ai": {
+    "title": "AI in development",
+    "items": [
+      "Claude Code as my main development environment – getting oriented in unfamiliar code, implementing, reviewing the result and recording decisions.",
+      "Custom skills: automated translation of localized content in a TinyMCE CMS (tested with jsdom), restyling a website from a Figma design, scroll-driven animations.",
+      "Multi-agent Figma-to-components pipeline: an orchestrator with subagents, Code Connect as the source of design tokens.",
+      "A knowledge base for agents (Obsidian “LLM wiki”) that agents read and update after every task.",
+      "MCP integrations – Figma, browser, file system."
+    ]
+  },
+  "skills": [
+    {
+      "name": "AI workflow",
+      "keywords": [
+        "Claude Code",
+        "custom skills (SKILL.md)",
+        "subagents and multi-agent workflows",
+        "MCP (Figma, browser)",
+        "prompting and context for agents"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "Less",
+        "JavaScript",
+        "UIkit",
+        "Chart.js",
+        "PWA (service worker, manifest)",
+        "responsive design"
+      ]
+    },
+    {
+      "name": "Templates and deployment",
+      "keywords": [
+        "Nette / Latte",
+        "e-mail templates",
+        "PDF templates",
+        "Git",
+        "GitLab (issues, merge requests, deploy)",
+        "DNS, SSL, FTP",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Performance and quality",
+      "keywords": [
+        "PageSpeed / Lighthouse",
+        "image and asset optimization",
+        "SEO basics",
+        "website localization (CZ, SK, EN, FR, PL)"
+      ]
+    },
+    {
+      "name": "Design and tools",
+      "keywords": [
+        "Figma",
+        "Adobe XD",
+        "Photoshop",
+        "Inkscape",
+        "VS Code",
+        "Laragon",
+        "NPM"
+      ]
+    },
+    {
+      "name": "Also",
+      "keywords": [
+        "Vue.js"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "IMPnet, s.r.o. (web agency)",
+      "position": "Frontend Developer, freelance",
+      "startDate": "2022-07",
+      "summary": "Turning designs into templates, deploying websites and e-shops, maintaining and extending client projects.",
+      "highlights": [
+        "Around 150 websites, e-shops and real-estate portals, from a Figma / Adobe XD design to launch on the production server.",
+        "PWAs: hand-written service worker, manifest and offline mode (app.lindabstrechy.cz, thermo-control.cz, mentem.cz).",
+        "mentem.cz – user profile for a games portal with player statistics, Chart.js charts and family licences (about 240 hours of development).",
+        "Performance: raised the mobile PageSpeed score of amrs.cz from 33 to 85.",
+        "E-mail and PDF document templates (product sheets, orders, property cards).",
+        "GitLab workflow – issues, merge requests, deploys; launching sites including DNS and SSL."
+      ]
+    },
+    {
+      "name": "DHL Freight CZ, s.r.o.",
+      "position": "Customer Service Representative",
+      "startDate": "2020",
+      "endDate": "2023-08"
+    },
+    {
+      "name": "Kiwi.com",
+      "position": "Customer Support Specialist (French)",
+      "startDate": "2019",
+      "endDate": "2019"
+    },
+    {
+      "name": "Festa Olomouc, s.r.o.",
+      "position": "PR Manager, Project Lead",
+      "startDate": "2016",
+      "endDate": "2021"
+    },
+    {
+      "name": "Colours of Ostrava, Svátky písní Olomouc, MusicOlomouc",
+      "position": "Event management",
+      "startDate": "2014"
+    }
+  ],
+  "projects": [
+    {
+      "name": "app.lindabstrechy.cz",
+      "url": "https://app.lindabstrechy.cz",
+      "description": "PWA for a roofing manufacturer – frontend, service worker, offline mode."
+    },
+    {
+      "name": "app.realitni-samoobsluha.cz",
+      "url": "https://app.realitni-samoobsluha.cz",
+      "description": "Vue.js PWA – REST API integration, token authentication fix, new features from the API docs."
+    },
+    {
+      "name": "mentem.cz",
+      "url": "https://mentem.cz",
+      "description": "Games portal – user profile, statistics and charts, licences, PWA."
+    },
+    {
+      "name": "thermo-control.cz",
+      "url": "https://thermo-control.cz",
+      "description": "E-shop with a product configurator and inquiry e-mails, PWA."
+    },
+    {
+      "name": "labona.cz",
+      "url": "https://labona.cz",
+      "description": "E-shop – coding the new design."
+    },
+    {
+      "name": "ranch13.sk",
+      "url": "https://ranch13.sk",
+      "description": "Website and ticketing system."
+    },
+    {
+      "name": "nextreality-tgh.cz",
+      "url": "https://nextreality-tgh.cz",
+      "description": "Real-estate website for the NEXT REALITY network."
+    },
+    {
+      "name": "nextrealitystars.cz",
+      "url": "https://nextrealitystars.cz",
+      "description": "Real-estate website for the NEXT REALITY network."
+    },
+    {
+      "name": "royalreality.cz",
+      "url": "https://royalreality.cz",
+      "description": "Real-estate website, PDF property cards."
+    },
+    {
+      "name": "caim.cz",
+      "url": "https://caim.cz",
+      "description": "Redesign for the Czech Association of Interim Management."
+    },
+    {
+      "name": "sonnybrown.com",
+      "url": "https://sonnybrown.com",
+      "description": "Website build and deployment."
+    },
+    {
+      "name": "unitinvest.cz",
+      "url": "https://unitinvest.cz",
+      "description": "Website build and deployment."
+    },
+    {
+      "name": "ester-ledecka.cz",
+      "url": "https://ester-ledecka.cz",
+      "description": "Website extension."
+    },
+    {
+      "name": "mandlarna.cz",
+      "url": "https://mandlarna.cz",
+      "description": "Website updates."
+    }
+  ],
+  "sideProjects": [
+    {
+      "name": "svatkypisniolomouc.cz",
+      "url": "https://www.svatkypisniolomouc.cz",
+      "description": "Built the whole website (2021); now undergoing a complete redesign."
+    },
+    {
+      "name": "musicolomouc.cz",
+      "url": "https://www.musicolomouc.cz",
+      "description": "Website administration."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Faculty of Arts, Palacký University Olomouc",
+      "area": "French for Business",
+      "studyType": "Master's degree (Mgr.)",
+      "startDate": "2016",
+      "endDate": "2019"
+    },
+    {
+      "institution": "IAE Clermont-Ferrand, France",
+      "area": "Master MAE",
+      "studyType": "Study abroad",
+      "startDate": "2017",
+      "endDate": "2018"
+    },
+    {
+      "institution": "Faculty of Arts, Palacký University Olomouc",
+      "area": "French with Applied Economics",
+      "studyType": "Bachelor's degree (Bc.), Erasmus at Université Charles-de-Gaulle, Lille 3",
+      "startDate": "2012",
+      "endDate": "2016"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Vue – The Complete Guide (incl. Router & Composition API)",
+      "issuer": "Udemy",
+      "url": "https://ude.my/UC-34d50d3b-ef35-4ccc-97d7-51f226b57c25/"
+    },
+    {
+      "name": "The Complete JavaScript Course 2022: From Zero to Expert!",
+      "issuer": "Udemy",
+      "url": "https://ude.my/UC-1256c589-e2f7-4c11-84b9-40dd0d9cfc14/"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Czech",
+      "fluency": "native"
+    },
+    {
+      "language": "French",
+      "fluency": "C1 (DALF C1)"
+    },
+    {
+      "language": "English",
+      "fluency": "C1"
+    },
+    {
+      "language": "Armenian",
+      "fluency": "B1"
+    },
+    {
+      "language": "Italian",
+      "fluency": "A2"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "A2"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Choral singing"
+    },
+    {
+      "name": "Sport – table tennis, football, cycling, badminton, running"
+    },
+    {
+      "name": "Reading, travel, cooking"
+    }
+  ],
+  "ui": {
+    "profile": "Profile",
+    "ai": "AI in development",
+    "skills": "Skills",
+    "work": "Experience",
+    "projects": "Selected projects",
+    "sideProjects": "Own projects",
+    "education": "Education",
+    "certificates": "Courses",
+    "languages": "Languages",
+    "interests": "Interests",
+    "contact": "Contact",
+    "present": "present",
+    "docTitle": "Petr Hýl – Frontend Developer with an AI Workflow – CV",
+    "keywords": "frontend developer, Claude Code, AI agents, JavaScript, HTML, CSS, Less, Nette, Latte, PWA, Git, GitLab, Chart.js, Olomouc, Czech Republic",
+    "pastWork": "Earlier experience",
+    "toolbar": "Versions and downloads",
+    "downloadPdf": "Download PDF",
+    "langLabel": "English"
+  }
+}

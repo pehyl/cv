@@ -1,0 +1,93 @@
+/* Petr Hýl CV — "Poster" direction.
+   The name is set big in an expressive grotesque on a deep ultramarine band (a nod to the
+   festival years); everything below stays calm and single-column. Yellow marks only the AI section. */
+:root {
+  --ink: #1b1f33; --muted: #5d6275; --band: #1d2a7a; --band-ink: #ffffff; --band-soft: #c8cffa;
+  --accent: #1d2a7a; --mark: #f2c230; --mark-tint: #fff6d6; --rule: #dfe2ea; --desk: #e6e8ef;
+  --font-body: 'Source Sans 3', system-ui, sans-serif; --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --pad-x: 16mm; --fs: 9.4pt; --lh: 1.38;
+}
+@page { margin: 13mm 0 12mm 0; }
+@page :first { margin-top: 0; }
+.cv { padding: 0 var(--pad-x); }
+
+/* header band */
+.head { margin: 0 calc(-1 * var(--pad-x)); padding: 12mm var(--pad-x) 8mm; background: var(--band); color: var(--band-ink);
+  display: grid; grid-template-columns: 1fr auto; column-gap: 8mm; align-items: end; }
+.name, .role, .contact { grid-column: 1; }
+.photo { grid-column: 2; grid-row: 1 / span 3; width: 30mm; height: 38mm; object-fit: cover; }
+.name { font-family: var(--font-display); font-weight: 800; font-size: 40pt; line-height: .92; letter-spacing: -.035em; }
+.role { font-family: var(--font-display); font-weight: 400; font-size: 15pt; color: var(--band-soft); margin-top: 3mm; letter-spacing: -.01em; }
+.contact { gap: 1mm 6mm; margin-top: 5mm; font-size: 9pt; color: var(--band-soft); }
+.contact a { color: var(--band-ink); }
+.contact a:hover { text-decoration: underline; text-underline-offset: 2px; }
+.contact a:focus-visible { outline-color: var(--mark); }
+
+/* sections */
+section { padding-top: 3.8mm; }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 13pt; letter-spacing: -.015em; color: var(--accent); margin-bottom: 1.4mm; }
+h3 { font-size: 10pt; font-weight: 700; }
+.profile p { font-size: 10.6pt; line-height: 1.45; max-width: 160mm; }
+
+.ai { margin: 4mm calc(-1 * var(--pad-x)) 0; padding: 3.4mm var(--pad-x) 3.8mm; background: var(--mark-tint); border-left: 3mm solid var(--mark); }
+.ai li { padding-left: 4mm; position: relative; margin: .5mm 0; }
+.ai li::before { content: ""; position: absolute; left: 0; top: 1.55mm; width: 1.6mm; height: 1.6mm; background: var(--mark); border-radius: 50%; }
+
+.skills dl { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.4mm 6mm; }
+.skill dt { font-weight: 700; }
+
+.job { display: grid; grid-template-columns: 24mm 1fr; column-gap: 4mm; padding: 1.2mm 0; }
+.when { color: var(--muted); font-size: 9pt; padding-top: .3mm; }
+.org { color: var(--muted); }
+.job-main .summary, .job-main ul { margin-top: 1mm; }
+.job-main li { position: relative; padding-left: 4mm; margin: .4mm 0; }
+.job-main li::before { content: ""; position: absolute; left: .4mm; top: 1.7mm; width: 1.3mm; height: 1.3mm; background: var(--accent); border-radius: 50%; }
+.job-past { padding: .4mm 0; }
+.job-past .what { display: flex; flex-wrap: wrap; column-gap: 2mm; }
+
+.proj-list { columns: 2; column-gap: 8mm; }
+.proj-list li { padding: .5mm 0; }
+.domain { font-weight: 700; color: var(--accent); }
+.domain:hover { text-decoration: underline; text-underline-offset: 2px; }
+.proj-list .desc { color: var(--muted); }
+h3.sub { font-family: var(--font-display); font-weight: 600; font-size: 10.5pt; color: var(--accent); margin: 2.4mm 0 .8mm; }
+
+.edu { display: grid; grid-template-columns: 24mm 1fr; column-gap: 4mm; padding: .8mm 0; }
+.edu .note { color: var(--muted); font-style: italic; }
+.courses li { margin: .3mm 0; }
+.courses a { text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 2px; }
+.courses a:hover { text-decoration-color: currentColor; }
+.languages dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8mm 6mm; }
+.lang { display: flex; gap: 2mm; }
+.lang dt { font-weight: 700; }
+.lang dd { color: var(--muted); }
+
+/* web-only toolbar */
+.toolbar { display: none; }
+@media screen {
+  .toolbar { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 18px; max-width: 210mm; margin: 0 auto 10px; padding: 0 4px; font-size: 14px; }
+  .toolbar a { color: var(--accent); font-weight: 600; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; }
+  .toolbar a:hover { text-decoration-color: currentColor; }
+  .cv { padding-bottom: 12mm; }
+}
+@media screen and (max-width: 820px) {
+  :root { --pad-x: 20px; --fs: 16px; }
+  .toolbar { justify-content: flex-start; padding: 12px 20px 0; margin-bottom: 12px; }
+  .head { grid-template-columns: 1fr; padding-top: 28px; padding-bottom: 24px; }
+  .photo { grid-column: 1; grid-row: auto; width: 112px; height: 142px; margin-bottom: 18px; }
+  .name { font-size: 44px; }
+  .role { font-size: 20px; }
+  .contact { font-size: 15px; flex-direction: column; }
+  h2 { font-size: 20px; margin-bottom: 6px; }
+  h3 { font-size: 16px; }
+  section { padding-top: 22px; }
+  .ai { margin-top: 22px; padding: 16px 20px 18px; border-left-width: 8px; }
+  .ai li::before { top: 9px; width: 7px; height: 7px; }
+  .job-main li::before { top: 9px; width: 6px; height: 6px; }
+  .profile p { font-size: 17px; }
+  .when, .contact { font-size: 15px; }
+  .skills dl, .languages dl { grid-template-columns: 1fr; gap: 10px; }
+  .proj-list { columns: 1; }
+  .proj-list li { padding: 4px 0; }
+  .job, .edu { grid-template-columns: 1fr; padding: 6px 0; }
+}

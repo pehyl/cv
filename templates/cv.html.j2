@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="{{ cv.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ ui.docTitle }}</title>
+<meta name="description" content="{{ b.summary }}">
+<meta name="author" content="{{ b.name }}">
+<meta name="keywords" content="{{ ui.keywords }}">
+{% if canonical %}<link rel="canonical" href="{{ canonical }}">
+<meta property="og:url" content="{{ canonical }}">
+{% endif %}<meta property="og:type" content="profile">
+<meta property="og:title" content="{{ b.name }} – {{ b.label }}">
+<meta property="og:description" content="{{ b.summary }}">
+<link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
+{% for f in fonts %}<link rel="stylesheet" href="{{ root }}fonts/{{ f }}">
+{% endfor %}<link rel="stylesheet" href="{{ root }}css/base.css">
+<link rel="stylesheet" href="{{ root }}css/cv.css">
+{% for alt in alternates %}<link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.href }}">
+{% endfor %}<link rel="alternate" type="application/json" href="resume.json" title="JSON Resume">
+<link rel="alternate" type="text/markdown" href="cv.md" title="Markdown">
+<script type="application/ld+json">{{ jsonld | safe }}</script>
+</head>
+<body>
+<nav class="toolbar" aria-label="{{ ui.toolbar }}">
+  {% for alt in alternates %}<a href="{{ alt.href }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}">{{ alt.label }}</a>{% endfor %}
+  <a href="{{ pdf_name }}" download>{{ ui.downloadPdf }}</a>
+  <a href="cv.md">Markdown</a>
+  <a href="resume.json">JSON Resume</a>
+</nav>
+<main class="cv" itemscope itemtype="https://schema.org/Person">
+
+<header class="head">
+  {% if b.image %}<img class="photo" src="{{ root }}{{ b.image }}" alt="{{ b.name }}" itemprop="image">{% endif %}
+  <h1 class="name" itemprop="name">{{ b.name }}</h1>
+  <p class="role" itemprop="jobTitle">{{ b.label }}</p>
+  <ul class="contact" aria-label="{{ ui.contact }}">
+    {% if show_private and b.location.address %}<li itemprop="address">{{ b.location.address }}, {{ b.location.postalCode }} {{ b.location.city }}</li>
+    {% else %}<li itemprop="address">{{ b.location.city }}, {{ country }}</li>{% endif %}
+    {% if show_private %}<li><a href="tel:{{ b.phone | replace(' ', '') }}" itemprop="telephone">{{ b.phone }}</a></li>{% endif %}
+    <li><a href="mailto:{{ b.email }}" itemprop="email">{{ b.email }}</a></li>
+    {% for p in b.profiles %}<li><a href="{{ p.url }}" itemprop="sameAs">{{ p.url | display_url }}</a></li>{% endfor %}
+  </ul>
+</header>
+
+<section class="profile" id="profile">
+  <h2>{{ ui.profile }}</h2>
+  <p itemprop="description">{{ b.summary }}</p>
+</section>
+
+<section class="ai" id="ai">
+  <h2>{{ ui.ai }}</h2>
+  <ul>{% for it in cv.ai['items'] %}<li>{{ it }}</li>{% endfor %}</ul>
+</section>
+
+<section class="skills" id="skills">
+  <h2>{{ ui.skills }}</h2>
+  <dl>{% for s in cv.skills %}
+    <div class="skill"><dt>{{ s.name }}</dt><dd>{% for k in s.keywords %}<span itemprop="knowsAbout">{{ k }}</span>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endfor %}
+  </dl>
+</section>
+
+{% macro job(w) %}
+  <article class="job{% if w.highlights %} job-main{% else %} job-past{% endif %}">
+    <p class="when"><time datetime="{{ w.startDate }}">{{ w.startDate | ym }}</time> – {% if w.endDate %}<time datetime="{{ w.endDate }}">{{ w.endDate | ym }}</time>{% else %}{{ ui.present }}{% endif %}</p>
+    <div class="what">
+      <h3>{{ w.position }}</h3>
+      <p class="org">{{ w.name }}</p>
+      {% if w.summary %}<p class="summary">{{ w.summary }}</p>{% endif %}
+      {% if w.highlights %}<ul>{% for h in w.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}
+    </div>
+  </article>
+{% endmacro %}
+<section class="work" id="work">
+  <h2>{{ ui.work }}</h2>
+  {% for w in cv.work if w.highlights %}{{ job(w) }}{% endfor %}
+</section>
+
+<section class="work work-past" id="earlier-work">
+  <h2>{{ ui.pastWork }}</h2>
+  {% for w in cv.work if not w.highlights %}{{ job(w) }}{% endfor %}
+</section>
+
+<section class="projects" id="projects">
+  <h2>{{ ui.projects }}</h2>
+  <ul class="proj-list">{% for p in cv.projects %}
+    <li><a class="domain" href="{{ p.url }}">{{ p.name }}</a> <span class="desc">{{ p.description }}</span></li>{% endfor %}
+  </ul>
+  <h3 class="sub">{{ ui.sideProjects }}</h3>
+  <ul class="proj-list">{% for p in cv.sideProjects %}
+    <li><a class="domain" href="{{ p.url }}">{{ p.name }}</a> <span class="desc">{{ p.description }}</span></li>{% endfor %}
+  </ul>
+</section>
+
+<section class="education" id="education">
+  <h2>{{ ui.education }}</h2>
+  {% for e in cv.education %}
+  <article class="edu">
+    <p class="when"><time datetime="{{ e.startDate }}">{{ e.startDate }}</time> – <time datetime="{{ e.endDate }}">{{ e.endDate }}</time></p>
+    <div class="what">
+      <h3>{{ e.area }}</h3>
+      <p class="org" itemprop="alumniOf">{{ e.institution }}</p>
+      <p class="note">{{ e.studyType }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+
+<section class="courses" id="courses">
+  <h2>{{ ui.certificates }}</h2>
+  <ul>{% for c in cv.certificates %}<li><a href="{{ c.url }}">{{ c.name }}</a>, {{ c.issuer }}</li>{% endfor %}</ul>
+</section>
+
+<section class="languages" id="languages">
+  <h2>{{ ui.languages }}</h2>
+  <dl>{% for l in cv.languages %}<div class="lang"><dt>{{ l.language }}</dt><dd>{{ l.fluency }}</dd></div>{% endfor %}</dl>
+</section>
+
+<section class="interests" id="interests">
+  <h2>{{ ui.interests }}</h2>
+  <p>{% for i in cv.interests %}{{ i.name }}{% if not loop.last %}; {% endif %}{% endfor %}</p>
+</section>
+
+</main>
+</body>
+</html>
